@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shapes</title>
+    <style>
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto; 
+        }
+        .rectangle{
+            width: 400px;
+            height: 200px;
+            background-color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+        }
+        .circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+        }
+        .loader{
+            width: 120px;
+            height: 120px;
+            border: 16px brown solid ;
+            border-radius: 50%;
+            border-top: 16px solid orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin{
+            0% { transform: rotate(0deg); }                     /*At the start*/
+            100% { transform: rotate(360deg); }                    
+        }
+        .loadername{
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            text-align: center;
+        }
+        #heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            background-color: palevioletred;
+            border-radius: 50px;
+        }
+    </style>        
+</head>
+<body style="background-color: black; color: antiquewhite;">
+
+    <h1 id="heading">Different type of SHAPES</h1>
+    <div class="square">SQUARE</div>
+    <div class="rectangle">RECTANGLE</div>
+    <div class="circle">CIRCLE</div>
+    <div class="loader"></div>
+    <div class="loadername">LOADER</div>   
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #666666;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 40px; */
+   
+}
+
+/* For making the text at the center of each block */
+.container1, .container2,.container3{                  
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;       
+    align-items: center;
+}
+.container1{
+    background-color: brown;
+}
+.container2{
+ 
+    background-color: green;
+}
+.container3{
+    
+    background-color: lightblue;
+}

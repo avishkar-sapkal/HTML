@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragAndDrop</title>
+    <style>
+        #div1 {
+            width: 400px;
+            height: 100px;
+            padding: 10px;
+            border: 4px solid #000;
+        }
+    </style>
+     <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);              //store the data (format , data(id))
+        }
+ 
+        function drop(ev) {
+            ev.preventDefault();
+            let data = ev.dataTransfer.getData("text");                     // retrive the data
+            let draggedElement =document.getElementById(data);
+            ev.target.appendChild(draggedElement)
+        }
+    </script>
+</head>
+<body>
+
+    <h1> Drag the image</h1>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="350" height="100">
+
+</body>
+</html>
+

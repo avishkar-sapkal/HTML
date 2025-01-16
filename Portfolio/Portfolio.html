@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    #content {
+        padding-top: 120px;
+        padding-bottom: 200px;
+    }
+
+    #profile {
+        width: 500px;
+        height: 480px;
+    }
+
+    .heading {
+        padding-top: 15px;
+        padding-left: 30px;
+    }
+
+    #h1 {
+        font-size: 100px;
+        font-family: "Oswald", serif;
+        letter-spacing: 6px;
+    }
+
+    h3 {
+        font-family: "Poppins", serif;
+
+    }
+
+    nav ul li a:hover {
+        background-color: #ffbd00;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+        padding-top: 30px;
+    }
+
+    .links a {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        padding-top: 0px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+
+    .resume {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #ffbd00;
+        border: 1px solid black;
+    }
+
+    .project {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-color: #ff4d3a;
+    }
+
+    .contact {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #41ead4;
+        border: 1px solid black;
+    }
+
+    .project:hover,
+    .contact:hover,
+    .resume:hover {
+        background-color: #fff2ff;
+    }
+
+    #footer {
+        font-family: "Poppins", serif;
+    }
+
+    #footer .fab {
+        font-size: 20px;
+        color: black;
+        margin: 0 10px;
+        transition: color 0.1s ease;
+    }
+</style>
+
+<body style="background-color: #fff2ff; color: black;">
+    <!-- nav -->
+    <nav class="container  mt-3 navbar navbar-expand-sm ">
+        <a class="navbar-brand" href="Portfolio.html">
+            <img src="profile1.jpg" alt="Logo" style="width:80px;" class="rounded-pill">
+            <!-- <p style="color: black; text-align: center;">Avishkar Sapkal</p> -->
+        </a>
+        <div class="container d-flex justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="resume.html">Resume</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="project.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <div id="content" class="container d-flex justify-content-center ">
+        <!-- Img -->
+        <div class="myimg">
+            <img id="profile" class="rounded-circle" src="profile1.jpg" alt="profile">
+        </div>
+
+        <!-- Details -->
+        <div class="heading ">
+            <h1 id="h1"><strong>HELLO</strong></h1>
+            <h3 class="container">A Bit About ME</h3>
+            <p class="container">I'm a Software Engineer currently pursing <br>my BTech in CSE from TKIET
+                Kolhapur.<br>Click to know about me.</p>
+            <!-- more about me -->
+            <div class="btn">
+                <button class="btn btn-danger"><a href="aboutme.html"
+                        style="text-decoration: none; color: white;"><strong>More
+                            About Me</strong></a></button>
+            </div>
+            <div class="links">
+                <div class="resume"><a class="links" href="resume.html"><strong>Resume</strong> </a></div>
+                <div class="project"><a class="links" href="project.html"><strong>Projects</strong></a></div>
+                <div class="contact"><a class="links" href="contact.html"><strong>Contact</strong></a></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer" class="container mt-5">
+        <hr>
+        <div class="row">
+            <div class="col text-center">
+                <h2 style="font-size: 25px;">Phone No</h2>
+                <p style="font-size: 20px;" class="display-6">9307857691</p>
+            </div>
+            <div class="col text-center">
+                <h2 style="font-size: 25px;">Email</h2>
+                <p style="font-size: 10px; " class="display-6">
+                    <a style="text-decoration: none; color: black; font-size: 15px;" href="#">avishkarsapkal1413@gmail.com</a>
+                </p>
+            </div>
+            <div class="col text-center">
+                <h2 style="font-size: 25px;">Follow me</h2>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="col text-center">
+                <h2 style="font-size: 20px;" class="display-6">
+                </h2>
+                <p class="display-6" style="font-size: 15px; padding: 25px;">© By Avishkar Sapkal</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

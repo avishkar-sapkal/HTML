@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Checking a element</title>
+</head>
+
+<body style="background-color: black; color: antiquewhite">
+    <div class="parent">
+        <div class="monday">Monday</div>
+        <div class="tuesday">Tuesday</div>
+        <div class="wednesday">Wednesday</div>
+        <div class="thrusday">Thrusday</div>
+        <div class="friday">Friday</div>
+        <div class="satday">Saturday</div>
+        <div class="sunday">Sunday</div>
+    </div>
+    <script>
+
+        const parent = document.querySelector('.parent')
+        // console.log(parent)
+        // console.log(parent.children)
+        // console.log(parent.children[1].innerHTML)
+        parent.children[5].style.backgroundColor = 'green'
+        parent.children[4].style.color = 'orange'
+
+        // console.log(parent.firstElementChild);
+        // console.log(parent.lastElementChild);
+
+    </script>
+
+</body>
+
+</html>
